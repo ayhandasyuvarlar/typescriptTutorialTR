@@ -110,4 +110,23 @@ sozVerdik
   .catch((err) => {
     console.log(err) // 'Bir sıkıntı var...' yazısını basar
   })
+
+// örnek 2
+
+const restartName = (name, restart) => {
+  return new Promise((resolve, rejects) => {
+    if (resolve) {
+        for (let i = 0; i < restart; i++) {
+          console.log(name)
+      }
+    } else {
+      rejects("hatali islem");
+    }
+  });
+};
+restartName('ayhan', 5)
+  .then((result) => console.log(result))
+  .catch((err) => {
+    console.log(err);
+  });
 ```

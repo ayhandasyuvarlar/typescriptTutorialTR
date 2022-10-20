@@ -1,24 +1,22 @@
-function personData(parameter: {
-  firstName: string
-  lastname: string
-  age: number
-}): Promise<string | number> {
-  return new Promise((resolve, reject) => {
-    if (true) {
-      resolve(parameter.lastname)
-    } else {
-      reject('hata olustu')
+const restartName = (
+  name: string,
+  restart: number,
+): Promise<string | number> => {
+  return new Promise((resolve, rejects) => {
+    if (resolve) {
+      for (let i = 1; i < restart; i++) {
+       console.log(name)
+      }
+    }
+    else{ 
+        rejects('hatali islem')
     }
   })
 }
-personData({
-  firstName: 'ayhan',
-  lastname: 'dasyuvarlar',
-  age: 20,
+
+restartName('ayhan', 5)
+.then(result=> console.log(result))
+.catch((err)=>{
+   console.log(err)
 })
-  .then((result) => {
-    console.log(result)
-  })
-  .catch((err) => {
-    console.log(err)
-  })
+
