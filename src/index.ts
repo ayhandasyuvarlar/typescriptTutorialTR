@@ -1,5 +1,24 @@
-function f(): [number, string] {
-  return [5, 'string']
+function personData(parameter: {
+  firstName: string
+  lastname: string
+  age: number
+}): Promise<string | number> {
+  return new Promise((resolve, reject) => {
+    if (true) {
+      resolve(parameter.lastname)
+    } else {
+      reject('hata olustu')
+    }
+  })
 }
-
-const returnFunction = f()
+personData({
+  firstName: 'ayhan',
+  lastname: 'dasyuvarlar',
+  age: 20,
+})
+  .then((result) => {
+    console.log(result)
+  })
+  .catch((err) => {
+    console.log(err)
+  })
