@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["ESNext"],
-    "strict": false, // veri tipinin boolean sa booelan olmasını daha garanti yapar
+    "strict": true, // veri tipinin boolean sa booelan olmasını daha garanti yapar
     "module": "commonjs",
     "sourceMap": true,
     // allowJs = typescript içerisinde  javascript kullanmanizi saglar
