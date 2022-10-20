@@ -130,3 +130,6 @@ restartName('ayhan', 5)
     console.log(err);
   });
 ```
+
+### Tip İsimlendirme
+
