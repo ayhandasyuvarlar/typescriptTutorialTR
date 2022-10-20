@@ -9,8 +9,6 @@
 - Temel Tipler & Tip Tanımlama
 - Tip Destekli Fonksiyon
 
-##
-
 ### Temel Tipler - Tip Tanımlama
 
 ```ts

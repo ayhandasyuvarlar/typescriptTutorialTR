@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "",
+  "sources": ["../src/index.ts"],
+  "names": [],
+  "mappings": ";AAAA,SAAS,CAAC;IACR,OAAO,CAAC,CAAC,EAAE,QAAQ,CAAC,CAAA;AACtB,CAAC;AAED,MAAM,cAAc,GAAG,CAAC,EAAE,CAAA"
+}

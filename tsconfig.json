@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext"],
     "strict": false, // veri tipinin boolean sa booelan olmasını daha garanti yapar
-    "module": "CommonJS",
+    "module": "commonjs",
+    "sourceMap": true,
     // allowJs = typescript içerisinde  javascript kullanmanizi saglar
     "alwaysStrict": true,
     "moduleResolution": "Node",
     "esModuleInterop": false,
-    "target": "ES6",
+    "target": "ES2016",
     "outDir": "dist",
     "rootDir": "src"
   }
