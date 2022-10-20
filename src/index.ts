@@ -1,10 +1,8 @@
-let b = 'hello' as 'hi' | 'how are you'
-
-const form = {
-  label: 'label',
-  input: 'input' as 'input' | 'hi' | 'how are you',
+function f(): [number , string] {
+  return [5 , 'string']
 }
 
-form.input = 'how are you'
 
-const input = document.querySelector('#data') as HTMLInputElement
+const returnFunction = f()
+
+console.log(returnFunction)

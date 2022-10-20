@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index",
-    "build": "tsc.cmd"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.8.5"
+    "@types/node": "^18.11.2"
   }
 }
