@@ -1,51 +1,9 @@
-type Colors = 'blue' | 'green' | 'red'
+import { Person, Student } from './person'
 
-type CustomColors = 'black' | 'yellow' | 'darkred'
-
-const myColor: Colors = 'blue'
-
-const colorArray: (Colors | CustomColors)[] = [
-  'blue',
-  'green',
-  'red',
-  'yellow',
-  'black',
-  'darkred',
-]
-
-type AllColors = Colors | CustomColors
-
-const allArrayColors: AllColors[] = ['black', 'blue', 'green', 'yellow']
-
-type Person = {
-  isim: string
-  soyisim: string
-  yas: number
+const student: Student = {
+  isim: 'Ayhan',
+  sinif: 4,
 }
 
-type PersonDetails = {
-  cinsi: string
-  tür: string
-}
-
-type AllObjects = Person & PersonDetails
-
-const AllObject: AllObjects[] = [
-  {
-    isim: 'Ayhan',
-    cinsi: 'Erkek',
-    tür: 'Türk',
-    soyisim: 'Dasyuvarlar',
-    yas: 21,
-  },
-]
-
-type myMap = Map<string, Person>
-
-const myMaps: myMap = new Map()
-
-myMaps.set('Person ', {
-  isim: 'ayhan',
-  soyisim: 'dasyuvarlar',
-  yas: 21,
-})
+console.log(Person.firsName)
+console.log(student)

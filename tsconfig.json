@@ -3,13 +3,13 @@
     "lib": ["ESNext"],
     "strict": true, // veri tipinin boolean sa booelan olmasını daha garanti yapar
     "module": "commonjs",
-    "sourceMap": true,
     // allowJs = typescript içerisinde  javascript kullanmanizi saglar
     "alwaysStrict": true,
     "moduleResolution": "Node",
     "esModuleInterop": false,
-    "target": "ES2016",
+    "target": "ES2020",
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true
   }
 }

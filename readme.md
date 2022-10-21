@@ -9,6 +9,7 @@
 - Temel Tipler & Tip Tanımlama
 - Tip Destekli Fonksiyon
 - Tip isimlendirme
+- Modüller
 
 ### Temel Tipler - Tip Tanımlama
 
@@ -205,4 +206,33 @@ myMaps.set('Person ', {
   soyisim: 'dasyuvarlar',
   yas: 21,
 })
+```
+
+### Modüller
+
+#### ES Modules (Ecmascript modülleri) JavaScript için bir import mekanizması sağlar. Bu mekanizma sayesinde farklı dosyalar içerisinde yer alan kodlar, diğer dosyalarda import ederek tekrar kullanılabilir hale gelmektedir. detaylı bilgi için [modüller](https://devnot.com/2021/javascript-modul-sistemi-es-modules-nedir/) bakabilirsiniz.
+
+### tsconfig.json dosyasında  gidip     "allowSyntheticDefaultImports": true  yaparsanız modülleri sorunsuz şekilde esmodules şeklinde içeri aktarabilirsiniz
+
+```js
+export class Person {
+  static firsName = 'Kadir'
+}
+
+export type Student = {
+  isim: string
+  sinif: number
+}
+//////////////// 
+
+import { Person, Student } from './person'
+
+const student: Student = {
+  isim: 'Ayhan',
+  sinif: 4,
+}
+
+console.log(Person.firsName)
+console.log(student)
+
 ```
