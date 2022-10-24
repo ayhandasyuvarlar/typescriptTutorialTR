@@ -7,3 +7,5 @@ const student: Student = {
 
 console.log(Person.firsName)
 console.log(student)
+
+asasddasdsa
